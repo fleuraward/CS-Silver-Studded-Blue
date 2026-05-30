@@ -1,12 +1,14 @@
 // ==UserScript==
 // @name         CS Silver-studded Blue - Image fixes
 // @namespace    http://tampermonkey.net/
-// @version      2026-05-30
+// @version      20260530.03
 // @description  fixing images across cs to fit theme
 // @author       june "layercake" "fleuraward" claw
 // @match        https://www.chickensmoothie.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=chickensmoothie.com
 // @grant        none
+// @downloadURL https://update.greasyfork.org/scripts/580433/CS%20Silver-studded%20Blue%20-%20Image%20fixes.user.js
+// @updateURL https://update.greasyfork.org/scripts/580433/CS%20Silver-studded%20Blue%20-%20Image%20fixes.meta.js
 // ==/UserScript==
 (function () {
     'use strict';
@@ -59,7 +61,8 @@ const adoptandstoreimgs = {
 
             const petsandarchive = {
                 'e0f6b2': 'e0e8ff', // pet images across site
-                '99c57c': '95aeff' // archive images
+                '99c57c': '95aeff', // archive images
+                'c6e194': 'c1d0ff' // pets in trades
             };
 
             const currentBg = imgUrl.searchParams.get('bg');

@@ -3,7 +3,7 @@
 @namespace    USO Archive
 @author       june "layercake" "fleuraward" claw
 @description  Switch to CS DULL GREEN to use. Need accompanying userscript to fix various pages like adopts and pet bgs. Most of the css was ripped straight from the site, I edited all the images myself (yay...) and changed everything to use variables for easier editing. This means some notes in the original css might still be in there
-@version      20260530.01
+@version      20260530.02
 @license      NONE
 @preprocessor uso
 ==/UserStyle== */
@@ -47,6 +47,8 @@
     --bg-tab-1: url("https://raw.githubusercontent.com/fleuraward/CS-Silver-Studded-Blue/refs/heads/main/assets/bg_tabs1.png");
     --bg-tab-2: url("https://raw.githubusercontent.com/fleuraward/CS-Silver-Studded-Blue/refs/heads/main/assets/bg_tabs2.png");
     --newicon: url("https://raw.githubusercontent.com/fleuraward/CS-Silver-Studded-Blue/refs/heads/main/assets/new48.png");
+    --ui-trade-main: url("https://raw.githubusercontent.com/fleuraward/CS-Silver-Studded-Blue/refs/heads/main/assets/ui-bg_flat_100_c6e194_40x100.png");
+    --ui-trade-header: url("https://raw.githubusercontent.com/fleuraward/CS-Silver-Studded-Blue/refs/heads/main/assets/ui-bg_flat_33_4ba139_40x100.png");
     
 /* everything else i kept the same, just made it all into variables so things can be easier to edit if needed */
     --foreground: #202020;
@@ -1255,4 +1257,23 @@ body.lostandfound .popover-body {
     body.storecategory .store-line-flex .store-line-header {
   background-color: var(--middle-green-2);
 }
+    
+    .ui-widget-content {
+  border: 1px solid #7690e4;
+  background: #c1d0ff var(--ui-trade-main) 50% 50% repeat-x;
+    }
+    
+    .ui-widget-header {
+  border: 1px solid #607ace;
+  background: #607ace var(--ui-trade-header) 50% 50% repeat-x;
+    }
+    
+    .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+  color: #edf1ff;
+}
+    
+    .ui-state-active a, .ui-state-active a:link {
+        color: var(--black);
+    }
+    
 }

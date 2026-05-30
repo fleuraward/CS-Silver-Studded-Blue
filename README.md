@@ -10,5 +10,5 @@ A blue-yellow colourblind friendly theme for CS
 Switch to CS DULL GREEN to use. Need accompanying userscript to fix various pages like adopts and pet bgs. Most of the css was ripped straight from the site, I edited all the images myself (yay...) and changed everything to use variables for easier editing. This means some notes in the original css might still be in there.
 
 # install
-- [css theme itself](x)
+- [css theme itself](https://userstyles.world/style/28309/cs-silver-studded-blue)
 - [userscript image fixes](https://greasyfork.org/en/scripts/580433-cs-silver-studded-blue-image-fixes)
